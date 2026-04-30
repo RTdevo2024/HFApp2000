@@ -24,7 +24,8 @@
 
 ```
 hahafit/
-└── CLAUDE.md          ← this file
+├── CLAUDE.md          ← technical reference & progress log
+└── DESIGN.md          ← design system & UI reference
 ```
 
 ## Database Schema
@@ -84,12 +85,12 @@ hahafit/
 
 ### ✅ Completed Prompts
 - Prompt 0a — Created CLAUDE.md
+- Prompt 0b — Created DESIGN.md
 
 ### 🔄 Current Prompt
-Prompt 0b — Creating DESIGN.md
+Prompt 1a — Plugin skeleton & database
 
 ### ⬜ Remaining Prompts
-- Prompt 0b: Create DESIGN.md
 - Prompt 1a/1b/1c: Plugin skeleton & database
 - Prompt 2a/2b/2c: REST API & authentication
 - Prompt 3a/3b/3c: Onboarding flow
@@ -118,6 +119,7 @@ Prompt 0b — Creating DESIGN.md
 | Date | Prompt | Change Description |
 |------|--------|--------------------|
 | 2026-04-30 | 0a | Created CLAUDE.md |
+| 2026-04-30 | 0b | Created DESIGN.md |
 
 ---
 
