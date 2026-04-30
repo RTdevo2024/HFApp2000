@@ -24,8 +24,32 @@
 
 ```
 hahafit/
-├── CLAUDE.md          ← technical reference & progress log
-└── DESIGN.md          ← design system & UI reference
+├── hahafit.php                        ← main plugin file (headers, constants, boot)
+├── CLAUDE.md                          ← technical reference & progress log
+├── DESIGN.md                          ← design system & UI reference
+├── includes/
+│   ├── class-hahafit.php              ← core bootstrap class (singleton)
+│   ├── class-activator.php            ← plugin activation handler
+│   ├── class-deactivator.php          ← plugin deactivation handler
+│   ├── api/                           ← REST API controllers (1b+)
+│   │   └── .gitkeep
+│   ├── services/                      ← business logic services (future)
+│   │   └── .gitkeep
+│   ├── integrations/                  ← third-party integrations (WC, SMS, etc.)
+│   │   └── .gitkeep
+│   └── models/                        ← data-access / model classes (future)
+│       └── .gitkeep
+├── frontend/
+│   ├── js/                            ← vanilla JS assets
+│   │   └── .gitkeep
+│   ├── css/                           ← plugin stylesheets
+│   │   └── .gitkeep
+│   └── fonts/                         ← self-hosted Vazirmatn font files
+│       └── .gitkeep
+├── templates/                         ← PHP template partials
+│   └── .gitkeep
+└── languages/                         ← .po / .mo translation files
+    └── .gitkeep
 ```
 
 ## Database Schema
@@ -86,9 +110,10 @@ hahafit/
 ### ✅ Completed Prompts
 - Prompt 0a — Created CLAUDE.md
 - Prompt 0b — Created DESIGN.md
+- Prompt 1a — Plugin skeleton (bootstrap, OOP structure, placeholder dirs)
 
 ### 🔄 Current Prompt
-Prompt 1a — Plugin skeleton & database
+Prompt 1b — Database tables
 
 ### ⬜ Remaining Prompts
 - Prompt 1a/1b/1c: Plugin skeleton & database
@@ -120,6 +145,7 @@ Prompt 1a — Plugin skeleton & database
 |------|--------|--------------------|
 | 2026-04-30 | 0a | Created CLAUDE.md |
 | 2026-04-30 | 0b | Created DESIGN.md |
+| 2026-04-30 | 1a | Created plugin skeleton: hahafit.php (headers, constants, WC check, boot hook), includes/class-hahafit.php (singleton bootstrap), includes/class-activator.php, includes/class-deactivator.php; added placeholder dirs with .gitkeep (includes/api, includes/services, includes/integrations, includes/models, frontend/js, frontend/css, frontend/fonts, templates, languages); updated CLAUDE.md |
 
 ---
 
